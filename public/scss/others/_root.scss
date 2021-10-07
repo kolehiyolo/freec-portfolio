@@ -1,0 +1,47 @@
+// * Root Font Size
+// This is where all REM values will be based on
+:root {
+    font-size: 24px;
+}
+
+// * Root Font Families
+:root {
+    --font--serif: 'Merriweather', serif;
+    --font--sans-serif: 'Montserrat', sans-serif;
+    --font--sans-serif-thin: 'Roboto', sans-serif;
+    --font--sans-serif-fancy: 'Raleway', sans-serif;
+    --font--what: "monospace";
+}
+
+// * Root Colors
+:root {
+    --color--primary: rgba(88, 166, 240, 1);
+    --color--primary-dark: rgb(12, 80, 144);
+    --color--primary-light: rgba(0, 0, 0, 1);
+
+    --color--background: rgba(0, 0, 0, 1);
+    --color--background-light: rgba(0, 0, 0, 1);
+    --color--background-lighter: rgba(0, 0, 0, 1);
+    --color--background-reverse: rgba(0, 0, 0, 1);
+
+    --color--element: rgba(0, 0, 0, 1);
+    --color--element-dark: rgba(0, 0, 0, 1);
+    --color--element-light: rgba(0, 0, 0, 1);
+    --color--element-lighter: rgba(0, 0, 0, 1);
+    --color--element-reverse: rgba(0, 0, 0, 1);
+
+    --color--text: rgba(255, 255, 255, 1);
+    --color--text-light: rgba(255, 255, 255, 1);
+    --color--text-reverse: rgba(255, 255, 255, 1);
+
+    --color--border: rgba(47,53,60,1);
+
+    --color--placeholder: rgba(255, 255, 255, 1);
+    --color--error: rgba(211, 114, 24, 1);
+}
+
+// * Input Placeholders
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--color-placeholder);
+}

@@ -1,0 +1,45 @@
+// * Node-SASS Script For Exporting
+// node-sass public/scss/index.scss public/css/index.css
+
+// * Root Properties
+@import "../../public/scss/others/_root.scss";
+
+html {
+    min-height: 100vh;
+
+    // * Overriding Default Box Model
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    // * Project Font
+    * {
+        font-family: var(--font--sans-serif);
+        color: var(--color--text);
+    }
+
+    // * Body
+    body {
+        min-height: 100vh;
+
+        // * Header
+        @import "../../public/scss/modules/macro/header.scss";
+
+        // * Main
+        main {
+            opacity: 1;
+        }
+
+        // * Footer
+        @import "../../public/scss/modules/macro/footer.scss";
+
+        // * Attribution
+        @import "../../public/scss/modules/macro/attribution.scss";
+    }
+}
+
+// * Others
+// Media Queries
+@import "../../public/scss/others/_media-queries.scss";
